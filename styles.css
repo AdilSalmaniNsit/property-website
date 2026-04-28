@@ -19,10 +19,29 @@ nav a {
 }
 
 .hero {
-    background: url('https://source.unsplash.com/1600x600/?house') no-repeat center;
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+
     color: white;
     text-align: center;
-    padding: 100px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
 }
 
 .property-container {
